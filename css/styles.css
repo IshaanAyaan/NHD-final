@@ -571,3 +571,43 @@ section::before {
   margin: 1rem 1rem 0 0;
   font-size: 1.05rem;
 }
+
+.published-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background: linear-gradient(90deg, #ffd700 0%, #ffb300 100%);
+  color: #fff;
+  padding: 1.1rem 2.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.18rem;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(255, 215, 0, 0.18);
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.published-btn::before {
+  content: '📖';
+  font-size: 1.3em;
+  margin-right: 0.7em;
+}
+
+.published-btn:hover {
+  background: linear-gradient(90deg, #ffb300 0%, #b8860b 100%);
+  box-shadow: 0 6px 28px rgba(255, 215, 0, 0.28);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.published-note {
+  color: #b8860b;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
